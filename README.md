@@ -2,7 +2,7 @@
 
 ## Introduction
 
-As Docker images and container technologies become more regular and integral pieces of the software development lifecycle, new tooling and methods for securing these artifacts begin to become a necessity, and should be woven into continuous integration pipelines.
+As Docker images and container technologies become more regular and integral pieces of the software development lifecycle, new tooling and methods for securing these artifacts begin to become a necessity, and should be clearly defined steps in continuous integration pipelines.
 
 Anchore is a service that conducts a deep image inspection and analysis of Docker images. Following this inspection, Anchore evaluates heavily customizable user-defined polices against the the analyzed image. Users are left with a detailed manifest of the contents of the image, and a final result of the policy evaluation. Most commonly, Anchore is run as a step in a CI pipeline. During which, images are analyzed and evaluted by Anchore. It is the final result of the policy evaluation that (depending on the steps defined) typically dictates whether the image should progress to the next stage in the pipeline. The Anchore results combined with a properly set up CI pipeline will ensure a high level of confidence when deploying container images into production environments. 
 
